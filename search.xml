@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Mac下生成 SSH Key</title>
+      <link href="/2020/01/15/mac-sshkeys/"/>
+      <url>/2020/01/15/mac-sshkeys/</url>
+      
+        <content type="html"><![CDATA[<h2 id="第一步：检查是否已经存在SSH-Key"><a href="#第一步：检查是否已经存在SSH-Key" class="headerlink" title="第一步：检查是否已经存在SSH Key"></a>第一步：检查是否已经存在SSH Key</h2><p>打开电脑终端，输入以下命令：</p><p><code>ls -al ~/.ssh</code></p><p>会出现两种情况</p><a id="more"></a><h2 id="第二步：生成-设置SSH-Key"><a href="#第二步：生成-设置SSH-Key" class="headerlink" title="第二步：生成/设置SSH Key"></a>第二步：生成/设置SSH Key</h2><h3 id="情况一：已经存在"><a href="#情况一：已经存在" class="headerlink" title="情况一：已经存在"></a>情况一：已经存在</h3><p>终端出现文件 id_rsa.pub 或 id_dsa.pub，则表示该电脑已经存在SSH Key，此时可继续输入命令：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;将公钥放到剪切板</span><br><span class="line">pbcopy &lt; ~&#x2F;.ssh&#x2F;id_rsa.pub</span><br></pre></td></tr></table></figure><p>这样你需要的 SSH Key 就已经复制到粘贴板上了.</p><h3 id="情况二：不存在"><a href="#情况二：不存在" class="headerlink" title="情况二：不存在"></a>情况二：不存在</h3><p>终端未出现 id_rsa.pub 或 id_dsa.pub 文件，表示该电脑还没有配置SSH Key，此时需要输入命令：</p><p><code>ssh-keygen -t rsa -C &quot;your_full_name@xxxxx.com&quot;</code></p><p>（注意，这里的 <a href="mailto:your_full_name@xxxxx.com">your_full_name@xxxxx.com</a> 是你自己的邮箱） 默认会在相应路径下（/your_home_path）生成id_rsa和id_rsa.pub两个文件，此时终端会显示：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Generating public&#x2F;private rsa key pair.</span><br><span class="line">Enter file in which to save the key (&#x2F;your_home_path&#x2F;.ssh&#x2F;id_rsa):</span><br></pre></td></tr></table></figure><p>连续回车即可，也可能会让你输入密码，密码就是你的开机密码</p><p>此时再输入命令：<code>ls -al ~/.ssh</code> 就会出现 id_rsa.pub 和 id_dsa.pub 两个文件</p><p>原文：<a href="https://www.jianshu.com/p/a0c783431620" target="_blank" rel="noopener">熟睡的毛毛虫</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> tools </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2020/01/15/hello-world/"/>
+      <url>/2020/01/15/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
