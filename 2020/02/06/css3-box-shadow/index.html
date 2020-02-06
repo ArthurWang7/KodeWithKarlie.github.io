@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
-  <title>01 开篇词 | 我们面临的困境，往往不是“程序问题” | awstudio&#39;s blog</title>
+  <title>CSS3 box-shadow 属性详解 | awstudio&#39;s blog</title>
   
   
 
@@ -287,31 +287,14 @@
 
   <section class='meta'>
     
-      
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.css">
-  <div class="aplayer"
-    data-theme=""
-    data-mini=true 
-    
-    data-mode="circulation"
-    data-server="netease"
-    data-type="song"
-    data-id="1370748318"
-    data-volume="0.7">
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/meting@1.1.0/dist/Meting.min.js"></script>
-
-
-    
     
     <div class="meta" id="header-meta">
       
         
   
     <h1 class="title">
-      <a href="/2020/01/16/eq-1/">
-        01 开篇词 | 我们面临的困境，往往不是“程序问题”
+      <a href="/2020/02/06/css3-box-shadow/">
+        CSS3 box-shadow 属性详解
       </a>
     </h1>
   
@@ -342,7 +325,7 @@
             <div class="new-meta-item date">
   <a class='notlink'>
     <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-    <p>2020-01-16</p>
+    <p>2020-02-06</p>
   </a>
 </div>
 
@@ -352,9 +335,9 @@
             
   
   <div class='new-meta-item category'>
-    <a href='/categories/articles/' rel="nofollow">
+    <a href='/categories/CSS/' rel="nofollow">
       <i class="fas fa-folder-open" aria-hidden="true"></i>
-      <p>articles</p>
+      <p>CSS</p>
     </a>
   </div>
 
@@ -386,14 +369,14 @@
       <a class='notlink'>
         <i class="fas fa-keyboard" aria-hidden="true"></i>
         <p>字数统计:</p>
-        <p>2.3k字</p>
+        <p>2.2k字</p>
       </a>
     </div>
     <div class="new-meta-item readtime">
       <a class='notlink'>
         <i class="fas fa-hourglass-half" aria-hidden="true"></i>
         <p>阅读时长≈</p>
-        <p>7分</p>
+        <p>10分</p>
       </a>
     </div>
   
@@ -415,49 +398,75 @@
 
     <section class="article typo">
       <div class="article-entry" itemprop="articleBody">
-        <p>#01 开篇词 | 我们面临的困境，往往不是“程序问题”</p>
-<blockquote>
-<p>天才就是长期劳动的结果。        ——牛顿</p>
+        <blockquote>
+<p>CSS3定义了两种阴影：盒子阴影和文本阴影。其中盒子阴影需要IE9及其更新版本，而文本阴影需要IE10及其更新版本。下面分别介绍box-shadow阴影的使用：</p>
 </blockquote>
-<p>大家好，我是风落，目前在蚂蚁金服工作。</p>
-<p>今天这个话题我其实想聊很久了。</p>
-<p>如果要对我过去的工作内容进行一个总结的话，那么我大概会这样归纳：我是一个撸过代码、做过测试、运维过服务器、当过项目经理的 “全占工程师”。</p>
-<p>如果让我对过去的职业发展说点什么，我应该会说：经历过外包、国企、外企的风风雨雨，现在终于进入了互联网的大风大浪。</p>
-<p>如果还要给自己多加一点戏的话，那么我应该还是一个有着多年经验的讲师，兼职负责学员们的 “心理顾问”，听大家倾诉工作、生活里各种不为人知的故事。按照 “久病成医” 的指导思想，我大概可以算作三分之一个 “职场心理治疗师”，差的那三分之二，我觉得主要是因为我不收费。</p>
-<p>当然，不收费就有不收费的好处，很多同学都愿意跟我聊聊心理话，我呢也不太会把大家当作学生或者客户，大多数时候该怼就怼，当骂则骂。或许大概因此吓跑了不少人，不过留下了更多的朋友，也获得了很多不太属于我的经历和故事。</p>
-<p>前段时间，我耐下性子把最近两三年的问题整理了一下。除了那些技术方向的问题，被问到最多的问题是这类：风落，我该怎么学习和努力才能进 BAT、拿高薪？与之对应的，排在第二的，则是：风落，我刚进来 XXX 公司，可是感觉特别困难，不知道自己该怎么办？</p>
-<p>虽然我没有点石成金的能力，但是相比起来我觉得第一个问题比第二个问题容易回答得多。想要得到一份好工作、获得一份优渥的薪水，我们完全可以从专业技能、面试技巧、简历优化等方面去扩展开来，可是，身在职场中的问题，却没有那么简单。</p>
-<p><strong>职场上的困境，大多数时候不是由于你的技能水平、你的代码质量，而是在于无法简单处理身边复杂繁琐的小事、忙碌而又头痛的人际关系。</strong></p>
-<p>《教父》里有句台词：<strong>花半秒钟就能看透事物本质的人，和花一辈子都看不清事物本质的人，注定是截然不同的命运</strong>。这是影响了很多人的一句话，职场的本质在哪里，我说不清楚，但是看清本质的 “快捷方式”，几乎一定是情商。</p>
-<p>之所以下定决心把这个话题跟大家分享出来，是因为前不久发生的一件事。</p>
-<p>我的一名学生从某一线互联网 A 公司离职了。</p>
-<p>他是个典型的技术男，在我的学生中算是比较优秀的那一批。先前是在一家小型公司做测试负责人，技术佳能力强，人长得蛮帅，也常被老板夸赞。</p>
-<p>他不止一次跟我聊过他后续的学习计划、他的职业规划，A 公司就是他职业规划的一部分。技术、实力、机遇几乎都眷顾了他，如愿以偿地进入了 A 公司。然而，半年后的现在，却选择了离职回到一个不知名的小公司。</p>
-<p>我很诧异，询问他原因。</p>
-<p>他很久没有回复我，大约过了有一小时，告诉我：</p>
-<blockquote>
-<p>自从进入 A 公司，他突然之间不知道该怎么融入这个环境。从之前的七八人的测试部门到现在的几十上百人的团队，从曾经的技术骨干到默默无名的小角色，好像突然就不知道怎么办了一样。很不容易交到了几个朋友，某一天的分享会议上，某 “朋友” 突然就把一个他刚刚完成与其炫耀过的小工具拿到会上展示给大家，并且说明是在 “朋友” 的指导帮助下，两个人一同完成的。然而会后却又可以若无其事的跟他打招呼。领导呢，似乎也不太信任他，总是明里暗里挑他的问题。最近，吃饭时还听到同事跟领导偷偷打他的小报告，于是季度绩效获得了一个非常烂的考评成绩。</p>
-</blockquote>
-<blockquote>
-<p>他觉得自己的能力没有得到认可，技术更是没有发挥的余地，半年之内除了不停地加班和时不时地被算计，完全没有什么提升。</p>
-</blockquote>
-<p>我突然发现这好像成为了一种普遍现象，在各大公司中或多或少的存在着。“与人为善” 的行为准则似乎已经不再适用于当今的职场了，但是我们真的不为善就要为恶么？</p>
-<p>放心放心，这里我不是要教大家主动出击，化悲愤为力量，以暴制暴。尽管职场上永远有那么一小撮 “善于弄权的黑莲花”，但是所有人包括我，都不希望有一天自己变成自己最讨厌的那种人。</p>
-<p>于是，我决定推出这样一个专栏。在这个专栏里，我们不讨论技术知识，不讨论流程管理，而是讨论在职场中的生存之道、为人之道；探讨我们在职场的方方面面可能遇到的困境，以及尝试突破困境的手段；探讨一些不属于传统意义 “情商” 所定义的 “职场情商”。</p>
-<p>蔡康永有一门 “情商课‘广为流传，有朋友从台湾游玩回来还特意带了一本竖版的《情商课》给我。所以，我把这个专栏起名也叫做《程序员情商课》。我希望大家在扎实的技术知识之余，能够多一份对于非技术的认识，更快地适应职场，也能够更好地应对职场中的困境。在这个专栏中我会介绍的内容可能会包括：</p>
-<p><strong>面试情商</strong></p>
-<p>作为一个老资格的 IT 人，面试别人和被面试是不可或缺的话题。在这部分里，我希望能够竖起一面放大镜，带你看清楚面试官的真实内心，也让你避免走上 “低情商” 面试的不归路。</p>
-<p><strong>职场情商</strong></p>
-<p><strong>情商并不是曲意逢迎，溜须拍马，情商，是你懂得自己的想法，也懂得别人的想法，并且经过思考以后，可以把两者关系处理得更好</strong>。 职场中，我们会面临很多选择的十字路口，更会面临让人不知所措的困境，我希望这个专栏能够帮助大部分同学面临职场上的无奈和困难时候，能够更合理、更理智也更聪明的度过。当然，提高情商的过程，不可能一下子蹭蹭上升到一个高度，需要在日常生活不断积累、演练，所以，我们会选择几个在互联网职场中最常遇到的 “天堑”，一起去聊聊无奈的 996、悲催的背锅侠、心酸的 “站队” 史等等。</p>
-<p><strong>职场管理</strong></p>
-<p>此管理非彼管理，我希望在这一部分跟大家分享的是关于 “向上、向下、横向” 管理的心态，自我情绪管理的秘密以及人设管理的重要。有的同学在看到第一个词的时候已经疯狂了：啥，还能向上管理？当然。甚至说，在职场中，向上管理比起横向管理和向下管理更为重要，毕竟，你的老板才是决定你生杀大权的关键人物。</p>
-<p><strong>场外情商</strong></p>
-<p>除了职场内，我也想聊聊关于学习、关于行为举止的一些话题，所以也会穿插了一些其他的内容，比如一些热点事件，能够让大家看到不一样的职场，不一样的你自己。</p>
-<p>啰嗦了很多，其实大家也知道，不可能有这样一本《职场 “杀敌” 秘籍之葵花籽宝典》一样的内容，能够帮助你大杀四方。我希望的，是我能够把我自己亲身经历的、有感而发的 “职场那些事” 分享给大家，希望能够对大家有所启迪和帮助。</p>
-<p>感觉气氛稍微有一点低沉，所以呢，在这次的专栏中，除了我，我们还请到了一个 “重量级” 嘉宾：小灰。</p>
-<p>后边的故事呢，将不时的请小灰和它的小伙伴们一起为大家讲述” 程序员情商那些事 “。</p>
-<p>最后，欢迎加入《程序员情商课》，我是风落，让我们一起做” 有情商 “的程序高手。</p>
-<p>本文来自 <a href="http://www.imooc.com/read/62" target="_blank" rel="noopener"> 风落几番 / 蚂蚁金服测试专家</a></p>
+<h2 id="盒子阴影box-shadow"><a href="#盒子阴影box-shadow" class="headerlink" title="盒子阴影box-shadow"></a>盒子阴影box-shadow</h2><p>box-shadow属性向box添加一个或多个阴影。</p>
+<p>语法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">box-shadow: offset-x offset-y blur spread color inset;</span><br><span class="line">box-shadow: X轴偏移量 Y轴偏移量 [阴影模糊半径] [阴影扩展] [阴影颜色] [投影方式];</span><br></pre></td></tr></table></figure>
+
+<p>词解释：blur:模糊 spread:伸展 inset:内凹</p>
+<p>参数解释：</p>
+<ul>
+<li>offset-x：必需，取值正负都可。offset-x水平阴影的位置。</li>
+<li>offset-y：必需，取值正负都可。offset-y垂直阴影的位置。</li>
+<li>blur:可选，只能取正值。blur-radius阴影模糊半径，0即无模糊效果，值越大阴影边缘越模糊。</li>
+<li>spread：可选，取值正负都可。spread代表阴影的周长向四周扩展的尺寸，正值，阴影扩大，负值阴影缩小。</li>
+<li>color:可选。阴影的颜色。如果不设置，浏览器会取默认颜色，通常是黑色，但各浏览器默认颜色有差异，建议不要省略。可以是rgb(250,0,0)，也可以是有透明值的rgba(250,0,0,0.5)。</li>
+<li>inset:可选。关键字，将外部投影(默认outset)改为内部投影。inset 阴影在背景之上，内容之下。</li>
+</ul>
+<p>注意：inset 可以写在参数的第一个或最后一个，其它位置是无效的。</p>
+<h2 id="box-shadow-使用"><a href="#box-shadow-使用" class="headerlink" title="box-shadow 使用"></a>box-shadow 使用</h2><h3 id="水平垂直偏移为0也可以有阴影"><a href="#水平垂直偏移为0也可以有阴影" class="headerlink" title="水平垂直偏移为0也可以有阴影"></a>水平垂直偏移为0也可以有阴影</h3><p>如果offset-x或offset-y值为0，则阴影在元素背后，此时给blur-radius值或spread值可以产生阴影效果。</p>
+<p>但是有一点要注意：扩展阴影必须和阴影模糊半径配合使用。</p>
+<p>我个人觉得应该是没有配合使用这一说，但不可能只设置扩展阴影，因为扩展阴影和阴影模糊的取值都可以为正。如果只有扩展阴影的话，会被浏览器当做模糊阴影来解析，所以也可以简单理解为“扩展阴影必须和阴影模糊半径配合使用”，如果只用扩展阴影，可以写成： <code>box-shadow:0 0 0 1px;</code>。</p>
+<p>代码示例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line">    div&#123;</span><br><span class="line">          width: 100px;</span><br><span class="line">          height: 100px;</span><br><span class="line">          margin:50px;</span><br><span class="line">          border: 10px dotted red;</span><br><span class="line">          display: inline-block;</span><br><span class="line">  &#125;</span><br><span class="line">  .blur&#123;</span><br><span class="line">          box-shadow: 0 0  20px ;</span><br><span class="line">          &#x2F;*box-shadow: 0 0  20px green;*&#x2F; &#x2F;*也可以自定义颜色*&#x2F;</span><br><span class="line">  &#125;  </span><br><span class="line">  .spread-positive&#123;</span><br><span class="line">          box-shadow: 0 0 20px 5px ;</span><br><span class="line">          &#x2F;* box-shadow: 0 0 20px 5px green;*&#x2F; &#x2F;*也可以自定义颜色*&#x2F;</span><br><span class="line">  &#125;</span><br><span class="line">  .spread-negative&#123;</span><br><span class="line">          box-shadow: 0 0 20px -5px ;</span><br><span class="line">          &#x2F;* box-shadow: 0 0 20px -5px green;*&#x2F; &#x2F;*也可以自定义颜色*&#x2F;</span><br><span class="line">  &#125;</span><br><span class="line">  &lt;&#x2F;style&gt;</span><br><span class="line">&lt;&#x2F;head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">  &lt;div class&#x3D;&quot;blur&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">  &lt;div class&#x3D;&quot;spread-positive&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">  &lt;div class&#x3D;&quot;spread-negative&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">&lt;&#x2F;body&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="设置水平垂直偏移得到阴影效果"><a href="#设置水平垂直偏移得到阴影效果" class="headerlink" title="设置水平垂直偏移得到阴影效果"></a>设置水平垂直偏移得到阴影效果</h3><p>outset情况：水平垂直偏移为0，但是不设置blur和spread，看不到阴影，因为此时box-shadow的周长和border-box一样，所以可以通过设置偏移让阴影显示出来。</p>
+<p>inset情况：水平垂直偏移为0，不设置blur和spread，同样看不到阴影，因为此时box-shadow的周长和padding-box一样，同样可通过设置偏移让阴影显示出来。</p>
+<p>代码示例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">&lt;style type&#x3D;&quot;text&#x2F;css&quot;&gt;</span><br><span class="line">div&#123;</span><br><span class="line">    width: 100px;</span><br><span class="line">    height: 100px;</span><br><span class="line">    margin:50px;</span><br><span class="line">    border: 10px dotted pink;</span><br><span class="line">    display: inline-block;</span><br><span class="line">&#125;</span><br><span class="line">.shadow0&#123;box-shadow: 0 0;&#125;  </span><br><span class="line">.shadow1&#123;box-shadow: 1px 1px;&#125;</span><br><span class="line">.shadow10&#123;box-shadow: 10px 10px;&#125;</span><br><span class="line">.inset-shadow0&#123;box-shadow: 0 0 inset;&#125;  </span><br><span class="line">.inset-shadow1&#123;box-shadow: 1px 1px inset;&#125;</span><br><span class="line">.inset-shadow10&#123;box-shadow: 10px 10px inset;&#125;</span><br><span class="line">&lt;&#x2F;style&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;div class&#x3D;&quot;shadow0&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">    &lt;div class&#x3D;&quot;shadow1&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">    &lt;div class&#x3D;&quot;shadow10&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">    &lt;div class&#x3D;&quot;inset-shadow0&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">    &lt;div class&#x3D;&quot;inset-shadow1&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">    &lt;div class&#x3D;&quot;inset-shadow10&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">&lt;&#x2F;body&gt;</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="投影方式"><a href="#投影方式" class="headerlink" title="投影方式"></a>投影方式</h3><p>投影方式默认是outset，即外部投影，可设置inset让向内投影。</p>
+<p>例子：第一个div默认outset，第二个设置inset，第三个同时设置两个阴影可以更好的看到outset和inset的关系，第四个div可以看出inset阴影在背景之上，内容之下。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">&lt;style type&#x3D;&quot;text&#x2F;css&quot;&gt;</span><br><span class="line">div&#123;</span><br><span class="line">    width: 100px;</span><br><span class="line">    height: 100px;</span><br><span class="line">    margin:50px;</span><br><span class="line">    border: 10px dotted pink;</span><br><span class="line">    display: inline-block;</span><br><span class="line">    vertical-align: top;</span><br><span class="line">&#125; </span><br><span class="line">.outset&#123;</span><br><span class="line">    box-shadow: 10px 10px teal;</span><br><span class="line">&#125;</span><br><span class="line">.inset&#123;</span><br><span class="line">    box-shadow: 10px 10px teal inset;    </span><br><span class="line">&#125;</span><br><span class="line">.double&#123;</span><br><span class="line">    box-shadow: 10px 10px teal inset,10px 10px teal;</span><br><span class="line">&#125;</span><br><span class="line">.bg&#123;</span><br><span class="line">    background-color: yellow;</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;style&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;div class&#x3D;&quot;outset&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">    &lt;div class&#x3D;&quot;inset&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">    &lt;div class&#x3D;&quot;double&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">    &lt;div class&#x3D;&quot;inset bg&quot;&gt;inset阴影在背景之上，内容之下&lt;&#x2F;div&gt;</span><br><span class="line">&lt;&#x2F;body&gt;</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="如果元素同时指定border-radius属性，则阴影呈现相同的圆角"><a href="#如果元素同时指定border-radius属性，则阴影呈现相同的圆角" class="headerlink" title="如果元素同时指定border-radius属性，则阴影呈现相同的圆角"></a>如果元素同时指定border-radius属性，则阴影呈现相同的圆角</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&lt;style type&#x3D;&quot;text&#x2F;css&quot;&gt;</span><br><span class="line"> div&#123;</span><br><span class="line"> width: 100px;</span><br><span class="line">    height: 100px;</span><br><span class="line">    margin:50px;</span><br><span class="line">    border: 10px dotted pink;</span><br><span class="line">    display: inline-block;</span><br><span class="line">    border-radius: 50px;</span><br><span class="line"> &#125;</span><br><span class="line">.shadow&#123;</span><br><span class="line">    box-shadow: 0 0  10px 10px green;</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;style&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;div class&#x3D;&quot;shadow&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">&lt;&#x2F;body&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="经典例子"><a href="#经典例子" class="headerlink" title="经典例子"></a>经典例子</h3><p><a href="http://www.w3.org/TR/css3-background/#the-box-shadow" target="_blank" rel="noopener">w3c中的一个例子</a></p>
+<ul>
+<li>border-radius会以相同的作用影响阴影外形</li>
+<li>border-image,padding不会影响阴影的任何外形</li>
+<li>阴影box和box模型一样</li>
+<li>外阴影在对象背景之下，内阴影在背景之上。</li>
+<li>层次：内容&gt;内阴影&gt;背景图片&gt;背景颜色&gt;外阴影</li>
+</ul>
+<h3 id="多重阴影"><a href="#多重阴影" class="headerlink" title="多重阴影"></a>多重阴影</h3><p>语法：可以设置任意多个阴影，用逗号隔开。</p>
+<p>一个box有多重阴影时，需要注意顺序：多个阴影从上往下分布，第一个阴影在最顶层。</p>
+<p>举例：单边阴影效果</p>
+<p><em>先解释一下：可单独设置左边框的阴影，右边框的阴影，上边框的阴影，下边框的阴影，其实这样说也对，因为效果看起来就是这样，但根本原因是阴影在盒子后面，只是让阴影的位置发生了变化，其他3 个边的阴影还是存在的，只是被覆盖住了而已，所以，设置某个边的阴影是个很虚的东东了，哎，网上这种说法初看还让我略感困惑，所以我这里说是单边阴影效果，告诉大家只是一种效果，本质还是个box。</em></p>
+<p>例子解释：给第一个div的上右下左border分别设置红橙黄绿，四种颜色，则red-shadow在最顶层，green-shadow在最底层，如下图左。<br>给其加上blur模糊半径，效果更明显，如下图中，可见red-shadow的模糊半径不受干扰，因为在最顶层；接下来orange-shadow次之，被red-shadow的radius干扰；yellow-shadow被orange-shadow和red-shadow的radius干扰；同理green-shadow被它上面的所有shadow的radius干扰。</p>
+<p>如果还是不太理解，那给red-shadow设置一个很大的radius，比如50，就可以看到非常明显的效果了。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">&lt;style type&#x3D;&quot;text&#x2F;css&quot;&gt;</span><br><span class="line">div&#123;</span><br><span class="line">    width: 100px;</span><br><span class="line">    height: 100px;</span><br><span class="line">    margin:50px;</span><br><span class="line">    display: inline-block;</span><br><span class="line">    border: 10px dotted pink;</span><br><span class="line">&#125;</span><br><span class="line">.shadow&#123;</span><br><span class="line">    box-shadow: 0 -5px red,</span><br><span class="line">    5px 0 orange,</span><br><span class="line">    0 5px yellow,</span><br><span class="line">    -5px 0 green;</span><br><span class="line">&#125;</span><br><span class="line">.blur-shadow&#123;</span><br><span class="line">    box-shadow: 0 -5px 5px red,</span><br><span class="line">    5px 0 5px orange,</span><br><span class="line">    0 5px 5px yellow,</span><br><span class="line">    -5px 0 5px green;</span><br><span class="line">&#125;</span><br><span class="line">.big-redShadow&#123;</span><br><span class="line">    box-shadow: 0 -5px 50px red,</span><br><span class="line">    5px 0 5px orange,</span><br><span class="line">    0 5px 5px yellow,</span><br><span class="line">    -5px 0 5px green;</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;style&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;div class&#x3D;&quot;shadow&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">    &lt;div class&#x3D;&quot;blur-shadow&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">    &lt;div class&#x3D;&quot;big-redShadow&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">&lt;&#x2F;body&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="阴影和布局"><a href="#阴影和布局" class="headerlink" title="阴影和布局"></a>阴影和布局</h3><p>阴影不影响布局， 但是可能会覆盖其他box或者其他box的阴影。</p>
+<p>阴影不触发滚动条，也不增加滚动区域的大小。</p>
+<p>所以布局时可忽略阴影。</p>
+<h3 id="spread妙用"><a href="#spread妙用" class="headerlink" title="spread妙用"></a>spread妙用</h3><p>用spread模拟实现border</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">&lt;style type&#x3D;&quot;text&#x2F;css&quot;&gt;</span><br><span class="line">div&#123;</span><br><span class="line">    width: 100px;</span><br><span class="line">    height: 100px;</span><br><span class="line">    display: inline-block;</span><br><span class="line">    margin:10px;</span><br><span class="line">    vertical-align: top;</span><br><span class="line">&#125;</span><br><span class="line">.border&#123;</span><br><span class="line">    border:1px solid red;</span><br><span class="line">&#125;</span><br><span class="line">.spread&#123;</span><br><span class="line">    box-shadow: 0 0 0 1px red;</span><br><span class="line">&#125;</span><br><span class="line">.muli-border&#123;</span><br><span class="line">    box-shadow: 0 0 0 2px red,0 0 0 4px green,0 0 0 6px blue;</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;style&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;div class&#x3D;&quot;border&quot;&gt;border&lt;&#x2F;div&gt;</span><br><span class="line">    &lt;div class&#x3D;&quot;spread&quot;&gt;box-shadow&lt;&#x2F;div&gt;</span><br><span class="line">    &lt;div class&#x3D;&quot;muli-border&quot;&gt;多重&lt;br&#x2F;&gt;box-shadow&lt;&#x2F;div&gt;</span><br><span class="line">&lt;&#x2F;body&gt;</span><br></pre></td></tr></table></figure>
+
+<p>用spread实现双色方括号</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;style type&#x3D;&quot;text&#x2F;css&quot;&gt;</span><br><span class="line">.decorator &#123;</span><br><span class="line">width: 300px;</span><br><span class="line">height: 100px;</span><br><span class="line">padding: 30px;</span><br><span class="line">box-shadow: -30px -30px 0 -25px red,30px 30px  0 -25px green; </span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;style&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;div class&#x3D;&quot;decorator&quot;&gt;段落内容：用box-shadow模拟双色方括号box-shadow: -24px -24px 0 -20px red,24px 24px  0 -20px green; &lt;&#x2F;div&gt;</span><br><span class="line">&lt;&#x2F;body&gt;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>本文来自 <a href="https://blog.csdn.net/qq_44607694/article/details/89605857" target="_blank" rel="noopener">「巧克力很苦」</a></p>
+<p>一些链接：</p>
+<ul>
+<li><a href="https://bitsofco.de/the-box-shadow-property/" target="_blank" rel="noopener">The box-shadow Property</a></li>
+</ul>
 
       </div>
       
@@ -470,10 +479,10 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-02-04T14:43:10+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-02-06T17:34:13+08:00">
   <a class='notlink'>
     <i class="fas fa-clock" aria-hidden="true"></i>
-    <p>updated at Feb 4, 2020</p>
+    <p>updated at Feb 6, 2020</p>
   </a>
 </div>
 
@@ -482,7 +491,7 @@
         
           
   
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/articles/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>articles</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/EQ/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>EQ</p></a></div>
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/CSS/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>CSS</p></a></div>
 
 
         
@@ -495,7 +504,7 @@
       
         <a class="-mob-share-qq" title="QQ好友" rel="external nofollow noopener noreferrer"
           
-          href="http://connect.qq.com/widget/shareqq/index.html?url=http://arthurwang.top/2020/01/16/eq-1/&title=01 开篇词 | 我们面临的困境，往往不是“程序问题” | awstudio's blog&pics=http://q513dozlr.bkt.clouddn.com/avatar-weibo.jpg&summary="
+          href="http://connect.qq.com/widget/shareqq/index.html?url=http://arthurwang.top/2020/02/06/css3-box-shadow/&title=CSS3 box-shadow 属性详解 | awstudio's blog&pics=http://q513dozlr.bkt.clouddn.com/avatar-weibo.jpg&summary="
           
           >
           
@@ -507,7 +516,7 @@
       
         <a class="-mob-share-qzone" title="QQ空间" rel="external nofollow noopener noreferrer"
           
-          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://arthurwang.top/2020/01/16/eq-1/&title=01 开篇词 | 我们面临的困境，往往不是“程序问题” | awstudio's blog&pics=http://q513dozlr.bkt.clouddn.com/avatar-weibo.jpg&summary="
+          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://arthurwang.top/2020/02/06/css3-box-shadow/&title=CSS3 box-shadow 属性详解 | awstudio's blog&pics=http://q513dozlr.bkt.clouddn.com/avatar-weibo.jpg&summary="
           
           >
           
@@ -519,7 +528,7 @@
       
         <a class="-mob-share-weibo" title="微博" rel="external nofollow noopener noreferrer"
           
-          href="http://service.weibo.com/share/share.php?url=http://arthurwang.top/2020/01/16/eq-1/&title=01 开篇词 | 我们面临的困境，往往不是“程序问题” | awstudio's blog&pics=http://q513dozlr.bkt.clouddn.com/avatar-weibo.jpg&summary="
+          href="http://service.weibo.com/share/share.php?url=http://arthurwang.top/2020/02/06/css3-box-shadow/&title=CSS3 box-shadow 属性详解 | awstudio's blog&pics=http://q513dozlr.bkt.clouddn.com/avatar-weibo.jpg&summary="
           
           >
           
@@ -543,40 +552,21 @@
       
           <div class="prev-next">
               
-                  <section class="prev">
-                      <span class="art-item-left">
-                          <h6><i class="fas fa-chevron-left" aria-hidden="true"></i>&nbsp;Previous</h6>
-                          <h4>
-                              <a href="/2020/01/16/eq-2/" rel="prev" title="02 不一样的情商课：程序员需要什么样的“情商”">
-                                
-                                    02 不一样的情商课：程序员需要什么样的“情商”
-                                
-                              </a>
-                          </h4>
-                          
-                              
-                              <h6 class="tags">
-                                  <a class="tag" href="/tags/articles/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> articles</a> <a class="tag" href="/tags/EQ/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> EQ</a>
-                              </h6>
-                          
-                      </span>
-                  </section>
-              
               
                   <section class="next">
                       <span class="art-item-right" aria-hidden="true">
                           <h6>Next&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
                           <h4>
-                              <a href="/2020/01/15/mac-sshkeys/" rel="prev" title="Mac下生成 SSH Key">
+                              <a href="/2020/02/03/flex-compatible/" rel="prev" title="CSS之flex兼容">
                                   
-                                      Mac下生成 SSH Key
+                                      CSS之flex兼容
                                   
                               </a>
                           </h4>
                           
                               
                               <h6 class="tags">
-                                  <a class="tag" href="/tags/tools/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> tools</a>
+                                  <a class="tag" href="/tags/CSS/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> CSS</a> <a class="tag" href="/tags/flex/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> flex</a>
                               </h6>
                           
                       </span>
@@ -606,7 +596,7 @@
 
   <script>
     window.subData = {
-      title: '01 开篇词 | 我们面临的困境，往往不是“程序问题”',
+      title: 'CSS3 box-shadow 属性详解',
       tools: true
     }
   </script>
@@ -749,6 +739,20 @@
           
             
               
+  <section class='widget toc-wrapper'>
+    
+<header class='material'>
+  <div><i class="fas fa-list fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;TOC</div>
+  
+    <!-- <div class='wrapper'><a class="s-toc rightBtn" rel="external nofollow noopener noreferrer" href="javascript:void(0)"><i class="fas fa-thumbtack fa-fw"></i></a></div> -->
+  
+</header>
+
+    <div class='content material'>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#盒子阴影box-shadow"><span class="toc-text">盒子阴影box-shadow</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#box-shadow-使用"><span class="toc-text">box-shadow 使用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#水平垂直偏移为0也可以有阴影"><span class="toc-text">水平垂直偏移为0也可以有阴影</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#设置水平垂直偏移得到阴影效果"><span class="toc-text">设置水平垂直偏移得到阴影效果</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#投影方式"><span class="toc-text">投影方式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#如果元素同时指定border-radius属性，则阴影呈现相同的圆角"><span class="toc-text">如果元素同时指定border-radius属性，则阴影呈现相同的圆角</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#经典例子"><span class="toc-text">经典例子</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#多重阴影"><span class="toc-text">多重阴影</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#阴影和布局"><span class="toc-text">阴影和布局</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#spread妙用"><span class="toc-text">spread妙用</span></a></li></ol></li></ol>
+    </div>
+  </section>
+
 
             
           
