@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>一个基于Vue的旅行App</title>
+      <link href="/2020/02/11/project-qunar/"/>
+      <url>/2020/02/11/project-qunar/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>本文记录一个基于Vue开发的旅行app</p></blockquote><h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><ul><li>Axios: Ajax数据获取</li><li>Vue Router: 多页面之间的路由</li><li>Vuex: 各个组件之间数据共享</li><li>异步组件: 代码上线性能更优</li><li>Stylus: 样式</li><li>递归组件: 组件调用自身</li><li>插件: swiper better-scroll</li><li>公用组件: 公用组件拆分</li></ul><p>代码结构：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">travel</span><br><span class="line">|---Home</span><br><span class="line">   |---Header</span><br><span class="line">    |---Swiper</span><br><span class="line">    |---Icons</span><br><span class="line">    |---Recommend</span><br><span class="line">|---Weekend</span><br><span class="line">|---City</span><br><span class="line">|---CityHeader</span><br><span class="line">|---CitySearch</span><br><span class="line">|---CityList</span><br><span class="line">|---CityAlphabet</span><br><span class="line">|---Detail</span><br><span class="line">|---DetailHeader</span><br><span class="line">|---DetailBanner</span><br><span class="line">|---DetailList</span><br></pre></td></tr></table></figure><h2 id="Home页面"><a href="#Home页面" class="headerlink" title="Home页面"></a>Home页面</h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端 </category>
+          
+          <category> Vue </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 项目 </tag>
+            
+            <tag> 前端 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>vue中router与route</title>
       <link href="/2020/02/10/vue-router-route/"/>
       <url>/2020/02/10/vue-router-route/</url>
@@ -22,9 +51,9 @@
       
         <tags>
             
-            <tag> Vue </tag>
-            
             <tag> 前端 </tag>
+            
+            <tag> Vue </tag>
             
         </tags>
       
